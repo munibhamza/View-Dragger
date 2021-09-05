@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvDataContainer"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="@dimen/_50sdp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llDataContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_weight=".1"/>
+
+                <com.kodex.dragviews.customviews.circleImageview.CircleImageView
+                    android:id="@+id/ivPersonImageContainer"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/alvaro"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPersonNameContainer"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@id/ivPersonImageContainer"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_14sdp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDropItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/ic_add"
+                android:drawablePadding="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:text="@string/drop_item_here"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#74BEF6</color>
+    <color name="purple_500">#0E6FB8</color>
+    <color name="purple_700">#057AEF</color>
+    <color name="teal_200">#75F5FA</color>
+    <color name="teal_700">#8AC6C6</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="simpletooltip_arrow">@color/black</color>
+    <color name="simpletooltip_background">@color/white</color>
+    <color name="simpletooltip_text">@android:color/primary_text_light</color>
+
+</resources>
